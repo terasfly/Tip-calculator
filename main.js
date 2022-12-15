@@ -21,12 +21,12 @@ const calculateTip = () => {
         error.style.display = "block";
         hideError();
     } else {
-        let amount = bill * rate;
-        console.log(typeof tipAmt);
+        let tipAmt = bill * rate;
+//         console.log(typeof tipAmt);
         // console.log(bill);
         // tipAmt = Math.ceil(tipAmt);
         // console.log(tipAmt);
-        tip.innerHTML = `Tip: $ ${amount}`;
+        tip.innerHTML = `Tip: $ ${tipAmt}`;
         console.log(tip);
 
         // let totalBill = Number(bill) + tipAmt;
