@@ -5,43 +5,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pats Tip Calculator</title>
+    <link rel="stylesheet" href="pats.css">
+
 </head>
 
 <body>
     <div class="container">
-        <div class="calc">
-            <h2>Tip calculator</h2>
+        <div class="app">
+            <h1>Tip calculator</h1>
             <form action="">
-                <div>
 
-                    <label for="bill">Bill:</label>
-                    <input type="text" class='bill' placeholder="$">
+                <div>
+                    <label for="bill">Bill :</label>
+                    <input type="text" placeholder="$" class="saskaita">
                 </div>
                 <div>
-
-                    <label for="">Rate Service:</label>
-                    <select name="" class="rate">
-                            <option value="0" disabled selected>
-                                -- select an option --
+                    <label for="pasirinkti">Tips :</label>
+                    <select name="" class="rates">
+                            <option selected disabled value="0">
+                                -- Select payment --
 
                             </option>
-                            <option value="0.15">15% - Exellent</option>
-                            <option value="0.1">10% - Good</option>
-                            <option value="0.05">5% - Fair</option>
+                            <option value="0.25">25%</option>
+                            <option value="0.15">15%</option>
+                            <option value="0.07">7%</option>
                         </select>
 
                 </div>
-                <button type="button" class="btn">Calculate</button>
-                <p class="error">Please enter bill and rate service.</p>
             </form>
-            <p class="tip">Tip Amount: $0</p>
-            <p class="total">Total Amount: $0</p>
+            <button type='button' class="btn">Calculate</button>
+            <p class="error">Error</p>
+            <div class="results">
+                <p class="tip">Tip amount :0</p>
+                <p class="total">Total amount :0</p>
+                <p class="myWallet">My wallet : $3456</p>
+                <p class="myWalletAfterPayment">My wallet balance :</p>
+            </div>
+
+
         </div>
     </div>
-    <script src="main.js"></script>
-
+    <script src="patsmain.js"></script>
 </body>
 
 </html>
