@@ -1,91 +1,104 @@
+body {
+    background-color: rgb(229, 233, 38);
+}
+
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 20px;
-    height: 100vh;
-    background-color: blue;
+    width: 700px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.calc {
-    width: 40rem;
-    background-color: white;
-}
-
-h2 {
-    font-size: 4rem;
-    color: white;
-    background-color: orange;
-    text-align: center;
-    padding: 1rem;
-}
-
-form,
-form>* {
-    width: 90%;
+    height: 100vh;
     margin: 0 auto;
+}
+
+.app {
+    margin: auto;
+    min-height: 400px;
+    background-color: #ffff;
+    min-width: 500px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+h1 {
+    font-size: 40px;
     text-align: center;
-    padding: 1rem 0;
-    font-size: 1.6rem;
-    border-bottom: 2px solid purple;
+    background-color: orange;
+    padding: 13px;
+    color: #ffff;
 }
 
 form div {
     display: flex;
+    padding: 10px 10px 3px 10px;
     justify-content: space-between;
-    align-items: center;
+    border-bottom: 1px solid purple;
+    width: 90%;
+    margin: 10px auto;
 }
 
-select {
-    font-size: 1.6rem;
-    padding: 7px;
-    text-align: right;
-    width: 21rem;
+form label {
+    font-size: 25px;
 }
 
-input {
-    font-size: 1.6rem;
-    padding: 7px;
-    text-align: right;
-    width: 20rem;
+.saskaita {
+    margin-bottom: 10px;
+    width: 250px;
+    font-size: 25px;
+    text-align: rightf;
 }
 
-.btn {
-    margin: 5px 0;
-    background-color: rgb(222, 33, 194);
+.rates {
+    font-size: 25px;
+    width: 260px;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 95%;
+    display: block;
+    background-color: rgb(247, 4, 187);
+    padding: 13px 50px;
+    margin: 0 auto;
+    font-size: 30px;
     color: #ffff;
-    outline: none;
     border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background-color: orangered;
+    outline: none;
 }
 
 .error {
-    color: red;
+    text-align: center;
+    font-size: 30px;
     display: none;
 }
 
-.result {
-    width: 90%;
-    margin: 0 auto;
-    padding: 1rem;
+.results {
+    margin: 10px;
 }
 
-.result>* {
-    background-color: rgb(201, 196, 196);
-    margin-bottom: 1rem;
-    padding: 1rem;
-    font-size: 1.8rem;
-    font-weight: 700;
+.tip {
+    background-color: grey;
+    padding: 15px;
+    color: #fff;
+    font-size: 30px;
 }
 
 .total {
-    color: red;
+    padding: 15px;
+    color: #fff;
+    font-size: 30px;
+    background-color: grey;
+}
+
+.myWallet {
+    padding: 15px;
+    color: #fff;
+    font-size: 30px;
+    background-color: grey;
+}
+
+.myWalletAfterPayment {
+    padding: 15px;
+    color: #fff;
+    font-size: 30px;
+    background-color: rgb(123, 12, 12);
 }
